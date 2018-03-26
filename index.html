@@ -1,0 +1,84 @@
+﻿<!DOCTYPE html>
+
+<html class="no-js">
+
+<head>
+
+
+<meta charset="UTF-8" />
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Анимация ленты новостей с помощью CSS3 и jQuery</title>
+
+
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js">
+</script>
+
+
+<script type="text/javascript" src="js/jquery.appear.js">
+</script>
+
+</head>
+
+
+<body>
+
+
+<h1>Анимация ленты новостей</h1>
+
+<div class="main">
+
+<div class="feed"></div>
+
+<div class="feed"></div>
+
+<div class="feed"></div>
+
+<div class="feed"></div>
+
+<div class="feed"></div>
+
+<div class="feed"></div>
+
+<div class="feed"></div>
+<div class="feed"></div>
+
+<div class="feed"></div>
+
+<div class="feed"></div>
+
+<div class="feed"></div>
+
+<div class="feed"></div>
+
+<div class="feed"></div>
+<div class="feed"></div>
+
+<div class="feed"></div>
+
+<div class="feed"></div>
+
+</div>
+
+
+<script type='text/javascript'>
+
+	$(function() {
+
+		$(document.body).on('appear', '.feed', function(e, $affected) {
+
+		$(this).addClass("appeared");
+	});
+	$('.feed').appear({force_process: true});
+
+});
+
+</script>
+
+
+</body>
+
+</html>
